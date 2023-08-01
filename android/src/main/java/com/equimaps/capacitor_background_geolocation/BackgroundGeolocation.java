@@ -137,10 +137,14 @@ public class BackgroundGeolocation extends Plugin {
 
             backgroundNotification = builder.build();
         }
+            // defaults set including new parameter numUpdates
         service.addWatcher(
                 call.getCallbackId(),
                 backgroundNotification,
                 call.getFloat("distanceFilter", 0f)
+                call.getInt("interval",61),// interval in seconds
+                call.getInt("maxWaitTime",0),// maxWaitTime in seconds
+                call.getInt("numUpdates",0) // how many updates before terminates 0 is infinite
         );
     }
 
