@@ -141,7 +141,7 @@ public class BackgroundGeolocation extends Plugin {
         service.addWatcher(
                 call.getCallbackId(),
                 backgroundNotification,
-                call.getFloat("distanceFilter", 0f)
+                call.getFloat("distanceFilter", 0f),
                 call.getInt("interval",1000),// interval in seconds
                 call.getInt("maxWaitTime",1000),// maxWaitTime in seconds
                 call.getInt("numUpdates",0) // how many updates before terminates 0 is infinite
