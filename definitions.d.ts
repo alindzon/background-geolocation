@@ -4,6 +4,9 @@ export interface WatcherOptions {
     requestPermissions?: boolean;
     stale?: boolean;
     distanceFilter?: number;
+     interval?: number;
+    maxWaitTime?: number;
+    numUpdates?:number;
 }
 
 export interface Location {
