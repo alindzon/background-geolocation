@@ -24,7 +24,7 @@
     ],
     "devDependencies": {
         "@capacitor/android": "6.0.0-rc.0",
-        "@capacitor/core": "6.0.0-rc.0",
+        "@capacitor/core": "6.2.0",
         "@capacitor/ios": "6.0.0-rc.0"
     },
     "peerDependencies": {
